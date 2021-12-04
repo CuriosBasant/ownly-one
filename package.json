@@ -1,0 +1,33 @@
+{
+  "name": "ownly-one",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "local:js": "tsc && ts-node -r dotenv/config .",
+    "local": "tsc && ts-node -r dotenv/config app/index.ts",
+    "dev": "ts-node -r dotenv/config app/index.ts",
+    "test": "ts-node app/test/game"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/opus": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.6.0",
+    "@googleapis/youtube": "^2.0.0",
+    "date-fns": "^2.24.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.1.0",
+    "ffmpeg-static": "^4.4.0",
+    "firebase-admin": "^9.12.0",
+    "libsodium-wrappers": "^0.7.9",
+    "ytdl-core": "^4.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.2",
+    "dotenv": "^10.0.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "author": "CuriosBasant <basantbrpl@gmail.com>",
+  "license": "MIT"
+}

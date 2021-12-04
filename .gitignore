@@ -1,0 +1,13 @@
+node_modules
+lib
+dummy-data
+*.private.ts
+.env
+.vscode
+private
+*.log
+*.backup
+.DS_Store
+.lock
+*.djs
+.npmignore
