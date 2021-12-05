@@ -7,7 +7,7 @@ const bot = new Client({
   intents: [Intents.FLAGS.GUILD_MESSAGES],
 })
 
-bot.once("ready", onceBotReady.bind(null, bot))
+bot.once("ready", onceBotReady.bind(bot))
 // bot.once("ready", () => onceBotReady(bot))
 
 bot.login(BOT_TOKEN)
