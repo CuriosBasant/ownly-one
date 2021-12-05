@@ -1,17 +1,14 @@
 import { Client, Intents } from "discord.js"
-import { BOT_TOKEN, TEST_SERVER_ID } from "./config"
+import { BOT_TOKEN } from "./config"
+import onceBotReady from "./events/onceReady"
 import "./extensions"
 
 const bot = new Client({
   intents: [Intents.FLAGS.GUILD_MESSAGES],
 })
 
-bot.once("ready", () => {
-  console.clear()
-  console.log("Bot is Online!")
-
-  bot.guilds.cache.get(TEST_SERVER_ID)!.greetMe("741690056372387902")
-})
+bot.once("ready", onceBotReady.bind(null, bot))
+// bot.once("ready", () => onceBotReady(bot))
 
 bot.login(BOT_TOKEN)
 
