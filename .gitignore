@@ -13,3 +13,5 @@ delete_me
 .lock
 *.djs
 .npmignore
+yarn.lock
+package-lock.json
