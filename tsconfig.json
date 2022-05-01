@@ -5,22 +5,22 @@
     "target": "ES2020",
     "lib": ["esnext"],
     "module": "commonjs",
+    "moduleResolution": "node",
 
     "rootDir": "app",
     "outDir": "lib",
     "baseUrl": "app",
-    "paths": { "json-db": ["./json-db"] },
-
-    "removeComments": true,
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "skipDefaultLibCheck": true,
     "strict": true,
-    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "removeComments": true,
+    "skipDefaultLibCheck": true,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
   },
 
-  "exclude": ["node_modules", "private"]
+  "exclude": ["node_modules", "private", "delete_me"]
 }

@@ -5,6 +5,8 @@ dummy-data
 .env
 .vscode
 private
+*.private
+delete_me
 *.log
 *.backup
 .DS_Store
